@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            overflow-x: hidden;
+        }
+        h1 {
+            color: #fff;
+            font-size: max(60px, 4vw);
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            text-align: center;
+        }
+        header, section {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            height: 100vh;
+        }
+        section {
+            background: #66c3d0;
+        }
+        header {
+            background: #024b61;
+            position: relative;
+        }
+        header h1 {
+            border: 5px solid white;
+            padding: 10px 50px;
+            margin: 50px;
+        }
+        .waves {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            width: 120vw;            
+        }   
+        .one{
+            animation: moveOne 3s ease-in-out infinite alternate;
+        }
+            @keyframes moveOne {
+            from {
+            transform: translateY(-45px);
+            
+            }
+        }
+        .two{
+            animation: movetwo 3s ease-in-out infinite alternate;
+        }
+            @keyframes movetwo {
+            from {
+                transform: translate(-100px);
+            
+            }
+        }
+        .three{
+            animation: movethree 3s ease-in-out infinite alternate;
+        }
+            @keyframes movethree {
+            from {
+                transform: translate(-200px);
+            
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>wiliam Justen Cursos</h1>
+        <svg class="waves" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+            <path class="wave one"fill="#438184" d="M0,64L20,90.7C40,117,80,171,120,176C160,181,200,139,240,117.3C280,96,320,96,360,117.3C400,139,440,181,480,197.3C520,213,560,203,600,170.7C640,139,680,85,720,80C760,75,800,117,840,160C880,203,920,245,960,240C1000,235,1040,181,1080,154.7C1120,128,1160,128,1200,149.3C1240,171,1280,213,1320,202.7C1360,192,1400,128,1420,96L1440,64L1440,320L1420,320C1400,320,1360,320,1320,320C1280,320,1240,320,1200,320C1160,320,1120,320,1080,320C1040,320,1000,320,960,320C920,320,880,320,840,320C800,320,760,320,720,320C680,320,640,320,600,320C560,320,520,320,480,320C440,320,400,320,360,320C320,320,280,320,240,320C200,320,160,320,120,320C80,320,40,320,20,320L0,320Z"></path>
+        <path class="wave two"fill="#57a783" d="M0,0L20,5.3C40,11,80,21,120,64C160,107,200,181,240,224C280,267,320,277,360,282.7C400,288,440,288,480,245.3C520,203,560,117,600,117.3C640,117,680,203,720,213.3C760,224,800,160,840,149.3C880,139,920,181,960,197.3C1000,213,1040,203,1080,176C1120,149,1160,107,1200,85.3C1240,64,1280,64,1320,80C1360,96,1400,128,1420,144L1440,160L1440,320L1420,320C1400,320,1360,320,1320,320C1280,320,1240,320,1200,320C1160,320,1120,320,1080,320C1040,320,1000,320,960,320C920,320,880,320,840,320C800,320,760,320,720,320C680,320,640,320,600,320C560,320,520,320,480,320C440,320,400,320,360,320C320,320,280,320,240,320C200,320,160,320,120,320C80,320,40,320,20,320L0,320Z"></path>
+        <path class="wave three" fill="#66c3d0" d="M0,160L20,133.3C40,107,80,53,120,48C160,43,200,85,240,133.3C280,181,320,235,360,240C400,245,440,203,480,192C520,181,560,203,600,218.7C640,235,680,245,720,218.7C760,192,800,128,840,106.7C880,85,920,107,960,96C1000,85,1040,43,1080,64C1120,85,1160,171,1200,176C1240,181,1280,107,1320,64C1360,21,1400,11,1420,5.3L1440,0L1440,320L1420,320C1400,320,1360,320,1320,320C1280,320,1240,320,1200,320C1160,320,1120,320,1080,320C1040,320,1000,320,960,320C920,320,880,320,840,320C800,320,760,320,720,320C680,320,640,320,600,320C560,320,520,320,480,320C440,320,400,320,360,320C320,320,280,320,240,320C200,320,160,320,120,320C80,320,40,320,20,320L0,320Z"></path></svg>
+    </header>
+    <section>
+        <h1>Another section</h1>
+    </section>
+</body>
+</html>
